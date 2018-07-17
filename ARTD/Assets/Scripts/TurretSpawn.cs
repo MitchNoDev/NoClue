@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class TurretSpawn : MonoBehaviour {
 
-    public GameObject baseTurret;
+    public GameObject[] turrets;
+
     public PathFinding pathfinding;
     public GridController grid;
     public GameController GC;
@@ -84,7 +85,33 @@ public class TurretSpawn : MonoBehaviour {
     {
         objHit = selectedNode;
 
-        Instantiate(baseTurret, position: (objHit.transform.position + spawnOffset), rotation: Quaternion.Euler(0, 0, 0), parent: objHit.transform);
+        Instantiate(turrets[0], position: (objHit.transform.position + spawnOffset), rotation: Quaternion.Euler(0, 0, 0), parent: objHit.transform);
+        selectedNode = null;
+
+        foreach (GameObject button in towerMenu)
+        {
+            button.GetComponent<Button>().interactable = false;
+        }
+    }
+
+    public void SpawnFastTurret(GameObject objHit)
+    {
+        objHit = selectedNode;
+
+        Instantiate(turrets[1], position: (objHit.transform.position + spawnOffset), rotation: Quaternion.Euler(0, 0, 0), parent: objHit.transform);
+        selectedNode = null;
+
+        foreach (GameObject button in towerMenu)
+        {
+            button.GetComponent<Button>().interactable = false;
+        }
+    }
+
+    public void SpawnSlowTurret(GameObject objHit)
+    {
+        objHit = selectedNode;
+
+        Instantiate(turrets[2], position: (objHit.transform.position + spawnOffset), rotation: Quaternion.Euler(0, 0, 0), parent: objHit.transform);
         selectedNode = null;
 
         foreach (GameObject button in towerMenu)
