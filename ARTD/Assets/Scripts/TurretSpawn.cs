@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TurretSpawn : MonoBehaviour {
-    
-    public GameObject turretPrefab;
+
+    public GameObject baseTurret;
     public PathFinding pathfinding;
     public GridController grid;
     public GameController GC;
     bool nodeSelected;
+
+    public GameObject[] towerMenu;
 
     public Vector3 spawnOffset;
 
@@ -36,6 +39,12 @@ public class TurretSpawn : MonoBehaviour {
                 {
                     if (selectedNode == null)
                     {
+
+                        foreach(GameObject button in towerMenu)
+                        {
+                            button.GetComponent<Button>().interactable = true;
+                        }
+
                         selectedNode = objectHit;
                         selectedNode.layer = 8;
                         
@@ -51,29 +60,36 @@ public class TurretSpawn : MonoBehaviour {
                         grid.FillGrid();
                         pathfinding.triggerPath = true;
                     }
-                    else if (selectedNode != null && selectedNode == objectHit && pathfinding.possible)
-                    {
-                        selectedNode.GetComponent<NodeController>().towerOn = true;
-                        selectedNode.GetComponent<NodeController>().trigger = true;
-                        SpawnTurret(selectedNode);
-                    }
                 }
             }
 
             if (Input.GetMouseButtonDown(1) && selectedNode != null)
             {
+
                 selectedNode.layer = 0;
                 selectedNode = null;
 
                 grid.FillGrid();
                 pathfinding.triggerPath = true;
+
+                foreach (GameObject button in towerMenu)
+                {
+                    button.GetComponent<Button>().interactable = false;
+                }
             }
         }
     }
 
-    void SpawnTurret(GameObject objHit)
-    {  
-        Instantiate(turretPrefab, position: (objHit.transform.position + spawnOffset), rotation: Quaternion.Euler(0, 0, 0), parent: objHit.transform);
+    public void SpawnBaseTurret(GameObject objHit)
+    {
+        objHit = selectedNode;
+
+        Instantiate(baseTurret, position: (objHit.transform.position + spawnOffset), rotation: Quaternion.Euler(0, 0, 0), parent: objHit.transform);
         selectedNode = null;
+
+        foreach (GameObject button in towerMenu)
+        {
+            button.GetComponent<Button>().interactable = false;
+        }
     }
 }
