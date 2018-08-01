@@ -16,17 +16,21 @@ public class TurretController : MonoBehaviour {
     public GameObject bulletPrefab;
     public Transform firePoint;
 
+    [SerializeField]
+    private GameObject tar = null;
+    private float timeForShoot;
+    private float timer = 0;
+
     void Awake()
     {
         GC = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         BPM = GameObject.FindGameObjectWithTag("GameController").GetComponent<BPM>();
+        timeForShoot = BPM.timeForBeat;
     }
 
 	// Update is called once per frame
 	void Update ()
-    {        
-        GameObject tar = null;
-
+    {    
         if (GC.enemies.Count != 0)
         {
             tar = GetClosestEnemy(GC.enemies);
@@ -36,14 +40,14 @@ public class TurretController : MonoBehaviour {
         {
             transform.LookAt(tar.transform);
 
-            if (BPM.trigger)
+            if (timeForShoot <= timer)
             {
                 Shot(tar);
+                timer = 0;
             }
-
-            if (BPM.trigger)
+            else
             {
-                BPM.trigger = false;
+                timer += Time.deltaTime;
             }
         }        
 	}

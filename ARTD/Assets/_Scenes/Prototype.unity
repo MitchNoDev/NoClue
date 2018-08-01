@@ -3570,7 +3570,6 @@ MonoBehaviour:
   timeForBeat: 0
   timeScaleMinute: 60
   timeScaleSecond: 1
-  trigger: 0
 --- !u!114 &401003674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3583,8 +3582,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cash: 0
-  startCash: 0
-  baseHealth: 0
+  startCash: 50
+  baseHealth: 20
   waveNumber: 0
   phaseType: StartPhase
   enemies: []

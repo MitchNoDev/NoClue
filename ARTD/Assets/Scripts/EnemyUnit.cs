@@ -22,10 +22,14 @@ public class EnemyUnit : MonoBehaviour {
     private Node curNode;
     private Node nextNode;
 
+    private float timeForMove;
+    private float timer;
+
     private void Awake()
     {        
         grid = GameObject.FindGameObjectWithTag("GameController").GetComponent<GridController>();
         BPM = GameObject.FindGameObjectWithTag("GameController").GetComponent<BPM>();
+        timeForMove = BPM.timeForBeat;
         GC = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         path = grid.path;
     }
@@ -66,7 +70,7 @@ public class EnemyUnit : MonoBehaviour {
 
     void Jump()
     {
-        if (BPM.trigger)
+        if (timeForMove <= timer)
         {
             Vector3 tar = nextNode.worldPosition;
             transform.position = tar;
@@ -74,12 +78,14 @@ public class EnemyUnit : MonoBehaviour {
             curNode = path[nodeInPath];
             nextNode = path[nodeInPath + 1];
             nodeInPath++;
-        }
 
-        if (BPM.trigger)
-        {
-            BPM.trigger = false;
+            timer = 0;
         }
+        else
+        {
+            timer += Time.deltaTime;
+        }
+        
     }
 
     void Die()

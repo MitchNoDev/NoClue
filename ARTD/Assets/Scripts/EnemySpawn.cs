@@ -18,17 +18,20 @@ public class EnemySpawn : MonoBehaviour {
     public bool waveStarted = false;
     public int waveNumber;
 
+    private float timeForSpawn;
+    private float timer = 0;
+
     private void Start()
     {
         GC = GetComponent<GameController>();
-        BPM = GetComponent<BPM>();
+        BPM = GetComponent<BPM>();        
         count = 0;
     }
 
     void Update()
-    {
+    {        
         if (waveStarted)
-        {
+        {            
             StartWave();
         }
     }
@@ -40,14 +43,17 @@ public class EnemySpawn : MonoBehaviour {
         {            
             //first wave
             case 0:
+                timeForSpawn = BPM.timeForBeat;
                 SpawnEnemy(waveOne);
                 break;
             //Second wave
             case 1:
+                timeForSpawn = BPM.timeForBeat;
                 SpawnEnemy(waveTwo);
                 break;
            //Thirs wave
             case 2:
+                timeForSpawn = BPM.timeForBeat;
                 SpawnEnemy(waveThree);
                 break;
         }               
@@ -58,17 +64,20 @@ public class EnemySpawn : MonoBehaviour {
         GameObject temp;
         while (count != currentWave.Count)
         {
-            if (BPM.trigger)
-            {
+            if (timeForSpawn <= timer)
+            {               
                 temp = Instantiate(currentWave[count], enemySpawner.transform.position, Quaternion.Euler(0, 0, 0), enemySpawner.transform);
                 GC.enemies.Add(temp);
-                count ++;
+                timer = 0;
+                print(timer);
+                count ++;                
             }
-        }
-
-        if(BPM.trigger)
-        {
-            BPM.trigger = false;
+            else
+            {
+                print("fuck");
+                timer += Time.deltaTime;
+                print(timer);
+            }
         }
 
         waveStarted = false;
