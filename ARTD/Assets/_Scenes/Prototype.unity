@@ -1219,8 +1219,6 @@ MonoBehaviour:
   noteNode: 0
   noteType: 
   mixer: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &214453035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,7 +1293,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 214453035}
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
 --- !u!1 &223861942
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,15 +1431,9 @@ RectTransform:
   m_Father: {fileID: 2050029422}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 223, y: 150}
-=======
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -157, y: -64}
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &228149798
@@ -1607,11 +1598,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 228768784}
   m_LocalRotation: {x: 0.43045902, y: 0.5609858, z: -0.43045938, w: 0.56098545}
-<<<<<<< HEAD
-  m_LocalPosition: {x: -2.93, y: 7.92, z: -1}
-=======
   m_LocalPosition: {x: -2.98, y: 9.02, z: -1}
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3477,13 +3464,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece4d698d08726341a5da245bc13e4cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  turretPrefab: {fileID: 1886916249008596, guid: f15b5a750ac1a0e489ea60818309a71b,
-    type: 2}
-  pathfinding: {fileID: 0}
-  grid: {fileID: 0}
-  GC: {fileID: 0}
-=======
   turrets:
   - {fileID: 1886916249008596, guid: f15b5a750ac1a0e489ea60818309a71b, type: 2}
   - {fileID: 1886916249008596, guid: 2209dc2984cbfc14f909de187c48bdc9, type: 2}
@@ -3495,7 +3475,6 @@ MonoBehaviour:
   - {fileID: 1853464678}
   - {fileID: 1724676336}
   - {fileID: 1741963018}
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
   spawnOffset: {x: 0, y: 1, z: 0}
   selectedNode: {fileID: 0}
   canBuild: 0
@@ -3603,16 +3582,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cash: 0
-<<<<<<< HEAD
   startCash: 50
   baseHealth: 20
-=======
-<<<<<<< HEAD
-=======
-  startCash: 0
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
-  baseHealth: 0
->>>>>>> 5f7e0b14238157f961e8481a6b8cf502d3ad6ca4
   waveNumber: 0
   phaseType: StartPhase
   enemies: []
@@ -4556,8 +4527,6 @@ MonoBehaviour:
   noteNode: 0
   noteType: 
   mixer: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &680785425
 GameObject:
   m_ObjectHideFlags: 0
@@ -4634,7 +4603,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 680785425}
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
 --- !u!1 &683286919
 GameObject:
   m_ObjectHideFlags: 0
@@ -5204,15 +5172,9 @@ RectTransform:
   m_Father: {fileID: 2050029422}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -224, y: 113}
-=======
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 156, y: -101}
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &820229232
@@ -6758,15 +6720,9 @@ RectTransform:
   m_Father: {fileID: 2050029422}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -224, y: 155}
-=======
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 156, y: -59}
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1033425010
@@ -6914,8 +6870,6 @@ MonoBehaviour:
   noteNode: 0
   noteType: 
   mixer: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &1051722479
 GameObject:
   m_ObjectHideFlags: 0
@@ -6992,7 +6946,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1051722479}
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
 --- !u!1 &1079160514
 GameObject:
   m_ObjectHideFlags: 0
@@ -7225,27 +7178,21 @@ Prefab:
       propertyPath: waveOne.Array.size
       value: 1
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-=======
     - target: {fileID: 114816453872520688, guid: dda814227f09bd04b861e7ffa2695d43,
         type: 2}
       propertyPath: turrets.Array.size
       value: 3
       objectReference: {fileID: 0}
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
     - target: {fileID: 114916804746219218, guid: dda814227f09bd04b861e7ffa2695d43,
         type: 2}
       propertyPath: waveThree.Array.size
       value: 5
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-=======
     - target: {fileID: 114816453872520688, guid: dda814227f09bd04b861e7ffa2695d43,
         type: 2}
       propertyPath: towerMenu.Array.size
       value: 3
       objectReference: {fileID: 0}
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
     - target: {fileID: 4122939061365720, guid: dda814227f09bd04b861e7ffa2695d43, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7340,8 +7287,6 @@ Prefab:
       value: 
       objectReference: {fileID: 1786922680686350, guid: 8b53305838285db42b3e104312562938,
         type: 2}
-<<<<<<< HEAD
-=======
     - target: {fileID: 114816453872520688, guid: dda814227f09bd04b861e7ffa2695d43,
         type: 2}
       propertyPath: towerMenu
@@ -7386,7 +7331,6 @@ Prefab:
       value: 
       objectReference: {fileID: 1886916249008596, guid: 76b8883d2eea7f349b55d5e55c3545b3,
         type: 2}
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dda814227f09bd04b861e7ffa2695d43, type: 2}
   m_IsPrefabParent: 0
@@ -8334,8 +8278,6 @@ MonoBehaviour:
   noteNode: 0
   noteType: 
   mixer: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &1356886076
 GameObject:
   m_ObjectHideFlags: 0
@@ -8372,7 +8314,6 @@ RectTransform:
   m_AnchoredPosition: {x: -215, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
 --- !u!1 &1397310125
 GameObject:
   m_ObjectHideFlags: 0
@@ -9059,15 +9000,9 @@ RectTransform:
   m_Father: {fileID: 2050029422}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -224, y: 133}
-=======
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 156, y: -81}
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1491220707
@@ -10202,27 +10137,13 @@ MonoBehaviour:
   noteNode: 0
   noteType: 
   mixer: {fileID: 0}
-<<<<<<< HEAD
---- !u!1 &1747479675
-=======
 --- !u!1 &1724676336
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-<<<<<<< HEAD
-  - component: {fileID: 1747479676}
-  - component: {fileID: 1747479679}
-  - component: {fileID: 1747479678}
-  - component: {fileID: 1747479677}
-  - component: {fileID: 1747479680}
-  m_Layer: 0
-  m_Name: Node
-  m_TagString: Turret Spawn
-=======
   - component: {fileID: 1724676337}
   - component: {fileID: 1724676340}
   - component: {fileID: 1724676339}
@@ -10230,21 +10151,10 @@ GameObject:
   m_Layer: 5
   m_Name: Fast Tower
   m_TagString: Untagged
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
---- !u!4 &1747479676
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1747479675}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.5, y: 0, z: 3.5}
-=======
 --- !u!224 &1724676337
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10498,7 +10408,6 @@ Transform:
   m_GameObject: {fileID: 1747479675}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.5, y: 0, z: 3.5}
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children: []
   m_Father: {fileID: 1402001682}
@@ -11136,8 +11045,6 @@ MonoBehaviour:
   noteNode: 0
   noteType: 
   mixer: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &1853464678
 GameObject:
   m_ObjectHideFlags: 0
@@ -11261,7 +11168,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1853464678}
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
 --- !u!1 &1876209123
 GameObject:
   m_ObjectHideFlags: 0
@@ -12485,10 +12391,7 @@ RectTransform:
   - {fileID: 1033425009}
   - {fileID: 1491220706}
   - {fileID: 820229231}
-<<<<<<< HEAD
-=======
   - {fileID: 1356886077}
->>>>>>> cb469ab9e9fc62a367cb6d55bd8de9e7e3fa8131
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
